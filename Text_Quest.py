@@ -32,7 +32,10 @@ def start_game(way, items):
 
 again = '1'
 while again == '1':
-    way = '1'
+    with open('save.txt', 'r') as f:
+        way = f.read()
     items = []
     start_game(way, items)
     again = input('Хотите начать заново?\n1) Да.\n2) Нет.')
+    with open('save.txt', 'w') as f:
+        f.write("1")
