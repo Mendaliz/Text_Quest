@@ -3,7 +3,7 @@ import json
 
 
 # файл json, а именно чтение графа игры
-with open('graph.json', 'r') as finf:
+with open('graph.json', 'r', encoding='utf8') as finf:
     graph = json.load(finf)
 
 # Вступление
