@@ -60,6 +60,9 @@ while again == '1':
 # Создание переменных
     way = data.split()[0]
     items = data.split()[1].split(',') if len(data.split()) > 1 else []
+
+# Запуск рекурссивной функции
+    start_game(way, items)
     
 # Вопрос после прохождения: играть ли заново?
     again = input('Хотите начать заново?\n1) Да.\n2) Нет.')
